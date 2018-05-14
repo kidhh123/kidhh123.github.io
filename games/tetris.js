@@ -7,8 +7,7 @@ const context2 = queueCanvas.getContext('2d');
 const holdCanvas = document.getElementById('holdCanvas');
 const context3 = holdCanvas.getContext('2d');
 const version = "0.3.0";
-var title = document.getElementById("title");
-title+=version;
+document.title = "Tetris clone v"+version;
 
 
 context.fillStyle = '#FFF';
