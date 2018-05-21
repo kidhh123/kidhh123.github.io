@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PAGE NOT READY</title>
+	<link rel="stylesheet" href="notready.css">
+</head>
+
+<body>
+	
+	<button onclick="playAud()" type="button">HI</button>
+	
+	<div class="notready">
+	PAGE NOT READY
+	</div>
+	
+	<audio autoplay id ="audio1">
+		<source src="./sounds/Dark Souls Death.mp3" type="audio/mp3">
+		Your browser does not support the audio element.
+	</audio>
+	<script type="application/javascript">
+		var a = document.getElementById("audio1");
+		a.volume = "0.2";
+		
+		function playAud(){
+			a.play();
+		}
+	</script>
+</body>
+</html>
