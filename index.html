@@ -1,9 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<script> document.location.href="aboutme.html";</script>
-</head>
-
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>DisGame2Hard</title>
+    <meta name="description" content="2hard's personal website">
+	<style>
+		*{
+		  box-sizing:border-box;
+		}
+		body{  
+		  margin:0;
+		  background-color: #77ff66;
+		}
+		.header{
+		  display: none;
+		  background-color: #129921;
+		  padding: 5px;
+		  
+		  font-size: 10vw;
+		  font-family: fantasy;
+		  
+		  text-align: center;
+		  letter-spacing: 2px;
+		}
+		.nav{
+		  background-color: #569965;
+		  overflow:hidden;
+		}
+		.nav a{
+		  margin:1px;
+		  padding: 10px; 
+		  float:left;
+		  color: #ddffdd;
+		   
+		  font-weight:bold;
+		  text-align:center;
+		  text-decoration: none;
+		}
+		.nav a:hover{
+		  background-color:#dddd00;
+		  color: black;
+		}
+		.nav .active{
+		  background-color:#dddd00;
+		  color: black;
+		}
+		.content{
+		  margin-top:10%;
+		  background-color: rgb(0,0,0,0.65);
+		  height:400px;
+		  font-size:0;
+		  text-align: center;
+		}
+		.content:before{
+		  content: 'for vertical align';
+		  width:0;
+		  display:inline-block;
+		  vertical-align: middle;
+		  height:100%;
+		}
+		.content .column1{
+		  overflow:left;
+		  display:inline-block;
+		  vertical-align: middle;
+		  width:30%;
+		  font-size:18px;
+		}
+		.content .column2{
+		  overflow:left;
+		  display:inline-block;
+		  vertical-align: middle;
+		  width:70%;
+		  font-size:18px;
+		  color: white;
+		}
+		img{
+		  border-radius:100%;
+		  width:80%;
+		}
+		.footer{
+		  position:absolute;
+		  bottom:0;
+		  width:100%;
+		  background-color: rgb(0,0,0,0.9);
+		  margin-top:5px;
+		  text-align:right;
+		  color:white;
+		}	
+	</style>
+  </head>
+  <body>
+    <div class="header">2HARD</div>
+    <div class="nav">
+      <a class="active">Homepage</a>
+      <a>About me</a>
+      <a>Portfolio</a>
+      <a>Blog</a>
+      <a href="https://www.facebook.com/yuheng.wang.16" target="_blank">Contact me</a>
+    </div>
+    <div class="content">
+      <div class="column1">
+        <img src="https://i.imgur.com/DKMTUGx.jpg" alt="qq">        
+      </div>
+      <div class="column2">
+        "=3="
+      </div>
+    </div>
+    <div class="footer">
+      Hense "disgame2hard" Wang<br>
+      kidhh123@gmail.com
+    </div>
+  </body>
 </html>

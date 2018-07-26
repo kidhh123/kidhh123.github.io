@@ -1,2 +1,2 @@
-# kidhh123.github.io
-personal pages
+# kidhh123
+this is my personal website on github
