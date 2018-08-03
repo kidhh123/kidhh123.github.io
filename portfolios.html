@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Portfolio</title>
-</head>
-
+	<head>
+		<title>Portfolio</title>
+		<style>
+			*{
+			  box-sizing: border-box;
+			}
+			body{
+			  margin:0;
+			}
+			.nav{
+			  background-color: #569965;
+			  overflow:hidden;
+			}
+			.nav a{
+			  margin:1px;
+			  padding: 10px; 
+			  float:left;
+			  color: #ddffdd;
+			   
+			  font-weight:bold;
+			  text-align:center;
+			  text-decoration: none;
+			  
+			  cursor: pointer;
+			}
+			.nav a:hover{
+			  background-color:#dddd00;
+			  color: black;
+			}
+			.nav .active{
+			  background-color:#dddd00;
+			  color: black;
+			}
+		</style>
+	</head>
 <body>
-	<div>
-		<a href="aboutme.html">About me</a>
-		<a href="blog.html">Blog</a>
-		<a href="portfolios.html">Portfolios</a>
-	</div>
+	<div class="nav">
+      <a href="index.html" >Homepage</a>
+      <a href="aboutme.html">About me</a>
+      <a class="active">Portfolio</a>
+      <a>Blog</a>
+      <a href="https://www.facebook.com/yuheng.wang.16" target="_blank">Contact me</a>
+    </div>
 	
 	<iframe src="./notready.html" height="900px" width="100%"></iframe>
 </body>

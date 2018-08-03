@@ -4,27 +4,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PAGE NOT READY</title>
 	<link rel="stylesheet" href="notready.css">
+	<style>
+	body{
+		background-image:url(images/again_and_again.jpg);
+		background-size: cover;
+	}
+	.notready{
+		height:250px;
+		background: rgba(0,0,0,0.6);
+		margin-top: 250px;
+		border: solid 2px rgba(0,0,0,0.3);
+		
+		color: #FF0000;
+		font-size: 80px;
+		text-align: center;	
+		line-height:250px;
+	}
+	</style>
 </head>
 
-<body>
-	
-	<button onclick="playAud()" type="button">HI</button>
-	
+<body>	
 	<div class="notready">
-	PAGE NOT READY
+		PAGE NOT READY
 	</div>
-	
-	<audio autoplay id ="audio1">
-		<source src="./sounds/Dark Souls Death.mp3" type="audio/mp3">
-		Your browser does not support the audio element.
-	</audio>
-	<script type="application/javascript">
-		var a = document.getElementById("audio1");
-		a.volume = "0.2";
-		
-		function playAud(){
-			a.play();
-		}
-	</script>
 </body>
 </html>
