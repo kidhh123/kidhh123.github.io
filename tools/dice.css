@@ -1,0 +1,106 @@
+*{
+	box-sizing: border-box;
+}
+.rollSheet{
+	display:none;
+	
+	background-color: rgb(240,240,40,1);
+	width: 800px;
+	margin: 5px auto;
+	padding: 5px;
+	border-radius: 10px;
+	text-align: center;
+}
+@media screen and (max-width:800px){
+	.rollSheet{
+		width:100%;		
+	}
+}
+/*三個不同表單的切換與外型*/
+#sheetChoiceDiv{
+	margin-top: 30px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+#sheetChoiceDiv .sheetTag{
+	border: 1px solid black;
+	border-bottom:none;
+	padding: 5px 5px 2px 5px;
+	color: white;
+	background-color: green;
+}
+#sheetChoiceDiv .sheetTag.active{
+	background-color:rgb(240,240,40,1);
+	color: black;
+}
+.active#simpleDiv{
+	margin-top: 0;
+	display: block;
+	background-color: rgb:(240,240,55);
+}
+.active#dndDiv{
+	margin-top: 0;
+	display: block;
+	background-color: rgb:(240,240,55);	
+}
+.active#customDiv{
+	margin-top: 0;
+	display: block;
+	background-color: rgb:(240,240,55);	
+}
+/*簡單擲骰*/
+#simpleDiv .diceFaces{
+	height: 70px;
+}
+#simpleDiv  .diceFaces:before{
+	display: inline-block;
+	content: '';
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+#simpleDiv  .faceChoice{
+	display: inline-block;
+	background-color: gray;
+	width: 50px;
+	height: 50px;
+	
+	color: white;
+	text-align: center;
+	
+	border: 1px solid black;
+	border-radius: 5px;
+}
+#simpleDiv  .faceChoice:before{
+	display: inline-block;
+	content: '';
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+#simpleDiv  .faceChoice.chosed{
+	border: 2px solid red;
+}
+#simpleDiv input{
+	width: 30px;
+	text-align: center;
+}
+/*dnd擲骰*/
+#dndDiv table{
+	margin: auto;
+	text-align: center;
+	empty-cells: show;
+}
+#dndDiv td{
+	
+}
+.dndModifier{
+	width: 40px;
+}
+#dndDiv input{
+	width: inherit;
+}
+#dndDiv th,#dndDiv td{
+	border: 1px solid;
+}
+/*自訂擲骰*/

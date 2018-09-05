@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Dice Roller</title>
+	<meta name="description" content="Online dice roller which have 3 different modes (simple/dnd/custom) .">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="dice.js"></script>
+	<link rel="stylesheet" type="text/css" href="dice.css">
+</head>
+
+<body>
+	<div id="sheetChoiceDiv">
+		<span class="sheetTag" value="simpleDiv" onclick="changeRollSheet(this)">Simple</span>
+		<span class="sheetTag active" value="dndDiv" onclick="changeRollSheet(this)">Dragon and dungeon</span>
+		<span class="sheetTag" value="customDiv" onclick="changeRollSheet(this)">Custom</span>
+	</div>
+	
+	<div class="rollSheet" id="simpleDiv">
+		<div id="diceFaces">
+			<div class="faceChoice chosed" value=6 onclick="simpleDiv_chooseFace(this)">6</div>
+			<div class="faceChoice" value=4 onclick="simpleDiv_chooseFace(this)">4</div>
+			<div class="faceChoice" value=2 onclick="simpleDiv_chooseFace(this)">2</div>
+		</div>
+		<br/>
+		<label>number of dices: </label><input type=text id="simpleDiceNumber" value="1"/>
+		<button id="simpleRollBtn" onclick="simpleDiv_roll()">Roll</button>
+		<hr>
+		<div class="result"></div>
+	</div>
+	
+	<div class="rollSheet active" id="dndDiv">
+		<table>
+			<thead>
+				<tr>
+					<th>Picture</th><th>Number</th><th>d</th><th>sign</th><th>modifier</th><th>exclude min max</th><th>roll</th><th>result</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td></td>
+					<td class="dndDiceNumber" id="dnd_d4Number"><input/></td>
+					<td class="dndDiceFace">d4</td>
+					<td class="dndModifierSign"><input type="radio" name="d4sign" checked/>+<input type="radio" name="d4sign"/>-</td>
+					<td class="dndModifier"><input name="d4Modifier"/></td>
+					<td class="dndExclude"><input type="checkbox">min<input type="checkbox">max</td>
+					<td class="dndRollBtn"><button onclick="dndDiv_roll(0)">roll</button></td>
+					<td class="dndRollResult"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="dndDiceNumber"><input/></td>
+					<td class="dndDiceFace">d6</td>
+					<td class="dndModifierSign"><input type="radio" name="d6sign" checked/>+<input type="radio" name="d6sign"/>-</td>
+					<td class="dndModifier"><input name="d6Modifier"/></td>
+					<td class="dndExclude"><input type="checkbox">min<input type="checkbox">max</td>
+					<td class="dndRollBtn"><button onclick="dndDiv_roll(1)">roll</button></td>
+					<td class="dndRollResult"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="dndDiceNumber"><input/></td>
+					<td class="dndDiceFace">d8</td>
+					<td class="dndModifierSign"><input type="radio" name="d8sign" checked/>+<input type="radio" name="d8sign"/>-</td>
+					<td class="dndModifier"><input name="d8Modifier"/></td>
+					<td class="dndExclude"><input type="checkbox">min<input type="checkbox">max</td>
+					<td class="dndRollBtn"><button onclick="dndDiv_roll(2)">roll</button></td>
+					<td class="dndRollResult"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="dndDiceNumber"><input/></td>
+					<td class="dndDiceFace">d10</td>
+					<td class="dndModifierSign"><input type="radio" name="d10sign" checked/>+<input type="radio" name="d10sign"/>-</td>
+					<td class="dndModifier"><input name="d10Modifier"/></td>
+					<td class="dndExclude"><input type="checkbox">min<input type="checkbox">max</td>
+					<td class="dndRollBtn"><button onclick="dndDiv_roll(3)">roll</button></td>
+					<td class="dndRollResult"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="dndDiceNumber"><input/></td>
+					<td class="dndDiceFace">d12</td>
+					<td class="dndModifierSign"><input type="radio" name="d12sign" checked/>+<input type="radio" name="d12sign"/>-</td>
+					<td class="dndModifier"><input name="d12Modifier"/></td>
+					<td class="dndExclude"><input type="checkbox">min<input type="checkbox">max</td>
+					<td class="dndRollBtn"><button onclick="dndDiv_roll(4)">roll</button></td>
+					<td class="dndRollResult"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="dndDiceNumber"><input/></td>
+					<td class="dndDiceFace">d100</td>
+					<td class="dndModifierSign"><input type="radio" name="d100sign" checked/>+<input type="radio" name="d100sign"/>-</td>
+					<td class="dndModifier"><input name="d100Modifier"/></td>
+					<td class="dndExclude"><input type="checkbox">min<input type="checkbox">max</td>
+					<td class="dndRollBtn"><button onclick="dndDiv_roll(5)">roll</button></td>
+					<td class="dndRollResult"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="dndDiceNumber"><input/></td>
+					<td class="dndDiceFace">d20</td>
+					<td class="dndModifierSign"><input type="radio" name="d20sign" checked/>+<input type="radio" name="d20sign"/>-</td>
+					<td class="dndModifier"><input name="d20Modifier"/></td>
+					<td class="dndExclude"><input type="checkbox">min<input type="checkbox">max</td>
+					<td class="dndRollBtn"><button onclick="dndDiv_roll(6)">roll</button></td>
+					<td class="dndRollResult"></td>
+				</tr>
+			</tbody>
+			<tfoot>
+			
+			</tfoot>
+			<!--
+			<div value=4><input/>d4+<input/><button onclick="dndDiv_roll(0)" value=0>Roll</button></div>
+			<div value=6><input/>d6+<input/><button onclick="dndDiv_roll(1)" value=1>Roll</button></div>
+			<div value=8><input/>d8+<input/><button onclick="dndDiv_roll(2)" value=2>Roll</button></div>
+			<div value=10><input/>d10+<input/><button onclick="dndDiv_roll(3)" value=3>Roll</button></div>
+			<div value=12><input/>d12+<input/><button onclick="dndDiv_roll(4)" value=4>Roll</button></div>
+			<div value=20><input/>d20+<input/><button onclick="dndDiv_roll(5)" value=5>Roll</button></div>
+			<div value=100><input/>d100+<input/><button onclick="dndDiv_roll(6)" value=6>Roll</button></div>
+			-->
+		</table>
+		<hr>
+		<button onclick="dndClear()">Clear log</button>
+		<div id="dndResult"></div>
+	</div>
+	
+	<div class="rollSheet" id="customDiv">
+		customDiv
+		<hr>
+		<div class="result"></div>
+	</div>
+</body>
+</html>
