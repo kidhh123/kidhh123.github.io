@@ -1,4 +1,4 @@
-{
+[
 	{
 		"id" : 36,
 		"name" : "San Diego",
@@ -52,4 +52,4 @@
 		"anti-sub" : 0,
 		"speed" : 32
 	}
-}
+]
