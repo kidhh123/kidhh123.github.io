@@ -1,0 +1,55 @@
+{
+	{
+		"id" : 36,
+		"name" : "San Diego",
+		"rarity" : 3,
+		"type" : 2,
+		"armor" : 0,
+		"hp" : 3338,
+		"reload" : 165,
+		"firepower": 119,
+		"torpedo" : 146,
+		"evasion" : 73,
+		"anti-air" : 406,
+		"air power" : 0,
+		"oil consumption" : 11,
+		"anti-sub" : 181,
+		"speed" : 32
+	},
+	
+	{
+		"id" : 3044,
+		"name" : "Portland",
+		"rarity" : 1,
+		"type" : 3,
+		"armor" : 1,
+		"hp" : 4866,
+		"reload" : 148,
+		"firepower": 208,
+		"torpedo" : 0,
+		"evasion" : 45,
+		"anti-air" : 228,
+		"air power" : 0,
+		"oil consumption" : 10,
+		"anti-sub" : 0,
+		"speed" : 26
+	},
+	
+	{
+		"id" : 353,
+		"name" : "Jean Bart",
+		"rarity" : 3,
+		"type" : 4,
+		"armor" : 2,
+		"hp" : 6897,
+		"reload" : 156,
+		"firepower": 378,
+		"torpedo" : 0,
+		"evasion" : 23,
+		"anti-air" : 210,
+		"air power" : 0,
+		"oil consumption" : 15,
+		"anti-sub" : 0,
+		"speed" : 32
+	},
+}
