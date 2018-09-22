@@ -1,0 +1,19 @@
+[
+	{"name": "貓老大","id": 53,"type1": 1,"type2": 0,"hp":65,"attack":70,"defense":60,"special_attack":65,"special_defense":65,"speed":115},	
+	{"name": "風速狗","id": 59,"type1": 5,"type2": 0,"hp":90,"attack":110,"defense":80,"special_attack":100,"special_defense":80,"speed":95},
+	{"name": "臭臭泥","id": 89,"type1": 9,"type2": 0,"hp":105,"attack":105,"defense":75,"special_attack":65,"special_defense":100,"speed":50},	
+	{"name": "椰蛋樹","id": 103,"type1": 7,"type2": 3,"hp":95,"attack":95,"defense":85,"special_attack":125,"special_defense":75,"speed":55},
+	{"name": "袋獸","id": 115,"type1": 1,"type2": 0,"hp":105,"attack":95,"defense":80,"special_attack":40,"special_defense":80,"speed":90},
+	{"name": "暴鯉龍","id": 130,"type1": 6,"type2": 11,"hp":95,"attack":125,"defense":79,"special_attack":60,"special_defense":100,"speed":81},	
+	{"name": "伊布","id": 133,"type1": 1,"type2": 0,"hp": 55,"attack": 55,"defense": 50,"special_attack": 45,"special_defense": 65,"speed": 55},
+	{"name": "水伊布","id": 134,"type1": 6,"type2": 0,"hp": 130,"attack": 65,"defense": 60,"special_attack": 110,"special_defense": 95,"speed": 65},
+	{"name": "雷伊布","id": 135,"type1": 8,"type2": 0,"hp": 65,"attack": 65,"defense": 60,"special_attack": 110,"special_defense": 95,"speed": 130},
+	{"name": "火伊布","id": 136,"type1": 5,"type2": 0,"hp": 65,"attack": 130,"defense": 60,"special_attack": 95,"special_defense": 110,"speed": 65},
+	{"name": "化石翼龍","id": 142,"type1": 15,"type2": 11,"hp": 80,"attack": 105,"defense": 65,"special_attack": 60,"special_defense": 75,"speed": 130},	
+	{"name": "太陽伊布","id": 196,"type1": 3,"type2": 0,"hp": 65,"attack": 65,"defense": 60,"special_attack": 130,"special_defense": 95,"speed": 110},
+	{"name": "火斑喵","id": 725,"type1": 5,"type2": 0,"hp": 45,"attack": 65,"defense": 40,"special_attack": 60,"special_defense": 40,"speed": 70},
+	{"name": "炎熱喵","id": 726,"type1": 5,"type2": 0,"hp": 65,"attack": 85,"defense": 50,"special_attack": 80,"special_defense": 50,"speed": 90},
+	{"name": "熾焰咆哮虎","id": 727,"type1": 5,"type2": 4,"hp": 95,"attack": 115,"defense": 90,"special_attack": 80,"special_defense": 90,"speed": 60},
+	{"name": "屬性：空","id": 772,"type1": 1,"type2": 0,"hp": 95,"attack": 95,"defense": 95,"special_attack": 95,"special_defense": 95,"speed": 59},
+	{"name": "銀伴戰獸","id": 773,"type1": 1,"type2": 0,"hp": 95,"attack": 95,"defense": 95,"special_attack": 95,"special_defense": 95,"speed": 95}
+]

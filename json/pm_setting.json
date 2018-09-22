@@ -1,0 +1,6 @@
+[
+	{
+		"type_en": ["null", "normal","ghost", "psychic", "dark", "fire", "water", "grass", "electic", "poison", "bug", "flying","steel", "ground", "fighting", "rock", "ice", "dragon", "fairy"],
+		"type_zh-tw": ["無", "一般","幽靈", "超能力", "邪惡", "火", "水", "草", "電", "毒", "蟲", "飛行","鋼", "地面", "格鬥", "岩石", "冰", "龍", "妖"],
+	},
+]
