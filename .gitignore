@@ -1,0 +1,10 @@
+# 依賴與建置產物：不進 git，由 GitHub Actions 重新編譯
+node_modules/
+dist/
+.astro/
+
+# 環境變數與系統檔
+.env
+.env.production
+.DS_Store
+npm-debug.log*

@@ -1,0 +1,49 @@
+name: Deploy to GitHub Pages
+
+on:
+  # 1) 每次 push 到 main / master 分支就自動觸發
+  push:
+    branches: [main, master]
+  # 2) 也可以在 GitHub 的 Actions 頁面手動按按鈕觸發
+  workflow_dispatch:
+
+# 授予這個 workflow 部署 GitHub Pages 所需的權限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同一時間只跑一個部署；新的會排隊等舊的（不取消進行中的）
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  # === 第一階段：建置 ===
+  build:
+    name: Build
+    runs-on: ubuntu-latest # 借一台乾淨的雲端 Linux
+    steps:
+      - name: 取得原始碼
+        uses: actions/checkout@v4
+
+      - name: 安裝 Node、裝依賴、build、上傳產物
+        uses: withastro/action@v3
+        # 這個官方 action 內部會自動做：
+        #   1. 安裝 Node
+        #   2. npm ci            （依 package-lock 安裝依賴）
+        #   3. npm run build      （產出 dist/ 純靜態檔）
+        #   4. 把 dist/ 打包成 Pages artifact 上傳
+
+  # === 第二階段：部署 ===
+  deploy:
+    name: Deploy
+    needs: build # 等 build 成功才跑
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # 把上一步的 artifact 正式發佈上線

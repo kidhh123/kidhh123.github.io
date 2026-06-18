@@ -1,0 +1,51 @@
+---
+// 全站共用導覽列：改這一處，所有頁面同步更新（解決舊版每頁複製貼上的問題）
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/aboutme', label: 'About Me' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/portfolios', label: 'Portfolios' },
+  { href: '/tools', label: 'Tools' },
+];
+
+const path = Astro.url.pathname;
+---
+
+<nav class="nav">
+  {
+    links.map((link) => (
+      <a href={link.href} class:list={[{ active: path === link.href }]}>
+        {link.label}
+      </a>
+    ))
+  }
+</nav>
+
+<style>
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav a {
+    padding: 0.4rem 0.8rem;
+    color: var(--muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition:
+      color 0.15s,
+      background-color 0.15s;
+  }
+  .nav a:hover {
+    color: var(--text);
+    background-color: rgba(255, 255, 255, 0.06);
+  }
+  .nav a.active {
+    color: var(--accent);
+  }
+</style>

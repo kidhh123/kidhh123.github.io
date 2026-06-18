@@ -1,0 +1,16 @@
+{
+  // === 格式化：只在你手動按時才跑，存檔不自動格式化 ===
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  // 存檔時不自動套用任何修正動作（含 Biome 的 quick fix）
+  "editor.codeActionsOnSave": {},
+
+  // 手動格式化（Shift+Alt+F）時，各檔案類型用哪個格式化器：
+  //   JS / TS / JSON → Biome
+  //   .astro         → Astro 官方擴充套件（模板排版較完整）
+  "[javascript]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[typescript]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[json]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[jsonc]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" }
+}
