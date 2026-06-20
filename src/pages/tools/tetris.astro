@@ -1,0 +1,62 @@
+---
+// frontmatter：建置時在 Node 端執行，產生 HTML 後就消失，不會送到瀏覽器
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Tetris clone">
+  <section class="tetris-page">
+    <h1>Tetris</h1>
+
+    <p class="controls">
+      <kbd>←</kbd><kbd>→</kbd> 移動 ·
+      <kbd>↑</kbd>/<kbd>X</kbd> 順轉 ·
+      <kbd>Z</kbd> 逆轉 ·
+      <kbd>↓</kbd> 軟降 ·
+      <kbd>Space</kbd> 硬降 ·
+      <kbd>C</kbd> 暫存
+    </p>
+
+    <div class="game">
+      <canvas id="holdCanvas" width="150" height="150"></canvas>
+      <canvas id="tetris" width="300" height="550"></canvas>
+      <canvas id="queueCanvas" width="150" height="750"></canvas>
+    </div>
+  </section>
+</BaseLayout>
+
+<!-- 這個 <script> 會送到瀏覽器、由 Vite 打包，在 client 端執行 -->
+<script>
+  import { Tetris } from '../../scripts/tetris.js';
+
+  // type=module 的 script 預設 defer，執行時 DOM 已就緒，可直接抓 canvas
+  const game = new Tetris(
+    document.getElementById('tetris'),
+    document.getElementById('queueCanvas'),
+    document.getElementById('holdCanvas'),
+  );
+  game.start();
+</script>
+
+<style>
+  .tetris-page {
+    text-align: center;
+  }
+  .controls {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .controls kbd {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.1rem 0.4rem;
+    font-size: 0.85rem;
+  }
+  .game {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 1rem;
+  }
+</style>
