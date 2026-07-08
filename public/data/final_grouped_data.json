@@ -1,0 +1,8547 @@
+{
+  "monster/ore.png": {
+    "chineseName": "礦石系列",
+    "iconPath": "monster/ore.png",
+    "items": [
+      {
+        "icon": "monster/ore.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "毒耐性",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      }
+    ]
+  },
+  "monster/bone.png": {
+    "chineseName": "骨製系列",
+    "iconPath": "monster/bone.png",
+    "items": [
+      {
+        "icon": "monster/bone.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP計量表加速",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      }
+    ]
+  },
+  "monster/g-jagr.png": {
+    "chineseName": "大凶豺龍",
+    "iconPath": "monster/g-jagr.png",
+    "items": [
+      {
+        "icon": "monster/g-jagr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "體力增強",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/g-jagr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "軀幹強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/g-jagr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "愈戰愈勇",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/g-jagr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "軀幹強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "水屬性攻擊強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/g-jagr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "不屈",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "愈戰愈勇",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/g-jagr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "水屬性攻擊強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/kulu.png": {
+    "chineseName": "搔鳥",
+    "iconPath": "monster/kulu.png",
+    "items": [
+      {
+        "icon": "monster/kulu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "不屈",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/kulu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鎖定",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "看破",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/kulu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "毅力",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/kulu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "背水防禦",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "看破",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/kulu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "背水防禦",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/kulu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "看破",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/puke.png": {
+    "chineseName": "毒妖鳥",
+    "iconPath": "monster/puke.png",
+    "items": [
+      {
+        "icon": "monster/puke.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "奇襲",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/puke.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "集中",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "體力增強",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/puke.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "毒耐性",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "集中",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/puke.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "毒屬性強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "毒耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/puke.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "毒屬性強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/puke.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "體力增強",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "毒耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/c-puke.png": {
+    "chineseName": "水妖鳥",
+    "iconPath": "monster/c-puke.png",
+    "items": [
+      {
+        "icon": "monster/c-puke.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "耳塞",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/c-puke.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "弱點特效",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "鎖定",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/c-puke.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "強化持續",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "愈戰愈勇",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/c-puke.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "愈戰愈勇",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "輕巧",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/c-puke.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "裝填速度",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "後座力減輕",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/c-puke.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "強化持續",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "弱點特效",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/barr.png": {
+    "chineseName": "土砂龍",
+    "iconPath": "monster/barr.png",
+    "items": [
+      {
+        "icon": "monster/barr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/barr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "攻擊守勢",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/barr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "攻擊守勢",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/barr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦性能",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/barr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "防禦性能",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/barr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "後座力減輕",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "防禦",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/g-girr.png": {
+    "chineseName": "大凶顎龍",
+    "iconPath": "monster/g-girr.png",
+    "items": [
+      {
+        "icon": "monster/g-girr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "奇襲",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/g-girr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "麻痺耐性",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/g-girr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "麻痺耐性",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "奇襲",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/g-girr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "奇襲",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "耳塞",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/g-girr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "麻痺屬性強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "耳塞",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/g-girr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "麻痺屬性強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/tobi.png": {
+    "chineseName": "飛雷龍",
+    "iconPath": "monster/tobi.png",
+    "items": [
+      {
+        "icon": "monster/tobi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/tobi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "裝填速度",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "完美迴避強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/tobi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "雷屬性攻擊強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/tobi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "完美迴避強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/tobi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "雷屬性攻擊強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/tobi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "完美迴避強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "雷耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/paol.png": {
+    "chineseName": "浮空龍",
+    "iconPath": "monster/paol.png",
+    "items": [
+      {
+        "icon": "monster/paol.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "精靈加護",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/paol.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP計量表加速",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "風壓耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/paol.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "後座力減輕",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/paol.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP計量表加速",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "精靈加護",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/paol.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "精靈加護",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/paol.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "風壓耐性",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/n-paol.png": {
+    "chineseName": "浮眠龍",
+    "iconPath": "monster/n-paol.png",
+    "items": [
+      {
+        "icon": "monster/n-paol.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "奇襲",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/n-paol.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "覺醒一擊",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/n-paol.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "集中",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "睡眠耐性",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/n-paol.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "睡眠攻擊強化",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/n-paol.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "奇襲",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/n-paol.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "覺醒一擊",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "奇襲【狀態異常】",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/jyur.png": {
+    "chineseName": "泥魚龍",
+    "iconPath": "monster/jyur.png",
+    "items": [
+      {
+        "icon": "monster/jyur.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "背水防禦",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/jyur.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "水耐性",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "背水防禦",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/jyur.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "水屬性攻擊強化",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "背水防禦",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/jyur.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "水屬性攻擊強化",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/jyur.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "水耐性",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/jyur.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "集中",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "背水防禦",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/anja.png": {
+    "chineseName": "蠻顎龍",
+    "iconPath": "monster/anja.png",
+    "items": [
+      {
+        "icon": "monster/anja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "愈戰愈勇",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/anja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "火屬性攻擊強化",
+            "unlock_grade": 4,
+            "level": 2
+          },
+          {
+            "name": "火耐性",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/anja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP技能威力提升",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/anja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "火屬性攻擊強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/anja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "火耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "SP技能威力提升",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/anja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "無傷",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/f-anja.png": {
+    "chineseName": "雷顎龍",
+    "iconPath": "monster/f-anja.png",
+    "items": [
+      {
+        "icon": "monster/f-anja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "會心擊【屬性】",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/f-anja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "破壞王【SP技能】",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "SP技能威力提升",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/f-anja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "高速蓄力【雷】",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "體力增強",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/f-anja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "高速蓄力【雷】",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/f-anja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP技能威力提升",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "鎖定",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/f-anja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP計量表加速",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "蠻力",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/rathi.png": {
+    "chineseName": "雌火龍",
+    "iconPath": "monster/rathi.png",
+    "items": [
+      {
+        "icon": "monster/rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "體力增強",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "體力增強",
+            "unlock_grade": 4,
+            "level": 2
+          },
+          {
+            "name": "毒屬性強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "毒屬性強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鎖定",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "連擊",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "毒耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "連擊",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "體力增強",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/p-rathi.png": {
+    "chineseName": "櫻火龍",
+    "iconPath": "monster/p-rathi.png",
+    "items": [
+      {
+        "icon": "monster/p-rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/p-rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP技能威力提升",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "風壓耐性",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/p-rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "龍屬性攻擊強化",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "集中",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/p-rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "風壓耐性",
+            "unlock_grade": 5,
+            "level": 2
+          },
+          {
+            "name": "看破",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/p-rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "看破",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/p-rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP技能威力提升",
+            "unlock_grade": 5,
+            "level": 2
+          },
+          {
+            "name": "龍屬性攻擊強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/g-rathi.png": {
+    "chineseName": "金火龍",
+    "iconPath": "monster/g-rathi.png",
+    "items": [
+      {
+        "icon": "monster/g-rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "追擊【毒】",
+            "unlock_grade": 6,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/g-rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "怨恨",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "精靈加護",
+            "unlock_grade": 8,
+            "level": 2
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/g-rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "破壞王",
+            "unlock_grade": 6,
+            "level": 2
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/g-rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "追擊【毒】",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/g-rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鎖定",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "死裡逃生",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/g-rathi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "追擊【毒】",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "毒屬性強化",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/legi.png": {
+    "chineseName": "風漂龍",
+    "iconPath": "monster/legi.png",
+    "items": [
+      {
+        "icon": "monster/legi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "精靈加護",
+            "unlock_grade": 5,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/legi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "精靈加護",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "冰屬性攻擊強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/legi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "精靈加護",
+            "unlock_grade": 5,
+            "level": 2
+          },
+          {
+            "name": "風壓耐性",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/legi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "裝填速度",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/legi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "冰屬性攻擊強化",
+            "unlock_grade": 5,
+            "level": 2
+          },
+          {
+            "name": "風壓耐性",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/legi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "裝填速度",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "冰耐性",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/diab.png": {
+    "chineseName": "角龍",
+    "iconPath": "monster/diab.png",
+    "items": [
+      {
+        "icon": "monster/diab.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "火場怪力",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/diab.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "火場怪力",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/diab.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "KO術",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "火場怪力",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/diab.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "火場怪力",
+            "unlock_grade": 5,
+            "level": 2
+          },
+          {
+            "name": "破壞王",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/diab.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "破壞王",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "攻擊守勢",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/diab.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "KO術",
+            "unlock_grade": 5,
+            "level": 2
+          },
+          {
+            "name": "破壞王",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/b-diab.png": {
+    "chineseName": "黑角龍",
+    "iconPath": "monster/b-diab.png",
+    "items": [
+      {
+        "icon": "monster/b-diab.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "破壞王",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/b-diab.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "破壞王",
+            "unlock_grade": 5,
+            "level": 2
+          },
+          {
+            "name": "怨恨",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/b-diab.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "怨恨",
+            "unlock_grade": 5,
+            "level": 2
+          },
+          {
+            "name": "軀幹強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/b-diab.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "怨恨",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "集中",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/b-diab.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鎖定",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "火場怪力",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/b-diab.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "火場怪力",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "攻擊守勢",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/ratha.png": {
+    "chineseName": "火龍",
+    "iconPath": "monster/ratha.png",
+    "items": [
+      {
+        "icon": "monster/ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "耳塞",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "攻撃",
+            "unlock_grade": 5,
+            "level": 2
+          },
+          {
+            "name": "火屬性攻擊強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "弱點特效",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "火耐性",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "攻撃",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "集中",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "火屬性攻擊強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "火耐性",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "弱點特效",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/a-ratha.png": {
+    "chineseName": "蒼火龍",
+    "iconPath": "monster/a-ratha.png",
+    "items": [
+      {
+        "icon": "monster/a-ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP技能威力提升",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/a-ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "集中",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/a-ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "耳塞",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "火屬性攻擊強化",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/a-ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "超會心",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/a-ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP技能威力提升",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "超會心",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/a-ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "裝填速度",
+            "unlock_grade": 5,
+            "level": 2
+          },
+          {
+            "name": "火屬性攻擊強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/s-ratha.png": {
+    "chineseName": "銀火龍",
+    "iconPath": "monster/s-ratha.png",
+    "items": [
+      {
+        "icon": "monster/s-ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "會心擊【屬性】",
+            "unlock_grade": 6,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/s-ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "會心擊【屬性】",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/s-ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "火屬性攻擊強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "超會心",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/s-ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "力量解放",
+            "unlock_grade": 6,
+            "level": 2
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/s-ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "風壓耐性",
+            "unlock_grade": 6,
+            "level": 2
+          },
+          {
+            "slots": [
+              "G6",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/s-ratha.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "會心擊【屬性】",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "弱點特效",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/rado.png": {
+    "chineseName": "骨鎚龍",
+    "iconPath": "monster/rado.png",
+    "items": [
+      {
+        "icon": "monster/rado.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/rado.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦性能",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/rado.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "睡眠攻擊強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "防禦",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/rado.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "KO術",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "睡眠耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/rado.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "睡眠攻擊強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/rado.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "睡眠耐性",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "防禦性能",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/banb.png": {
+    "chineseName": "猛牛龍",
+    "iconPath": "monster/banb.png",
+    "items": [
+      {
+        "icon": "monster/banb.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "軀幹強化",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/banb.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "耐震",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "後座力減輕",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/banb.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP計量表加速",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "破壞王",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/banb.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "攻擊守勢",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "耐震",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/banb.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "攻撃",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "軀幹強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/banb.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "精靈加護",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "SP計量表加速",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/bari.png": {
+    "chineseName": "冰牙龍",
+    "iconPath": "monster/bari.png",
+    "items": [
+      {
+        "icon": "monster/bari.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/bari.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "輕巧",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/bari.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "冰耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "冰屬性攻擊強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/bari.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "冰屬性攻擊強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/bari.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "輕巧",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "冰耐性",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/bari.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "奇襲",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/zino.png": {
+    "chineseName": "雷狼龍",
+    "iconPath": "monster/zino.png",
+    "items": [
+      {
+        "icon": "monster/zino.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "完美迴避強化",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/zino.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP計量表加速【完美迴避】",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "連擊",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/zino.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP計量表加速【完美迴避】",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "雷耐性",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/zino.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "雷屬性攻擊強化",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/zino.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "完美迴避強化",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "裝填速度",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/zino.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "連擊",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "雷屬性攻擊強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/tzit.png": {
+    "chineseName": "眩鳥",
+    "iconPath": "monster/tzit.png",
+    "items": [
+      {
+        "icon": "monster/tzit.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鎖定",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/tzit.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "雷屬性攻擊強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/tzit.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "奇襲【狀態異常】",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "完美迴避強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/tzit.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "奇襲【狀態異常】",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/tzit.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "奇襲【狀態異常】",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/tzit.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "不屈",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/odog.png": {
+    "chineseName": "慘爪龍",
+    "iconPath": "monster/odog.png",
+    "items": [
+      {
+        "icon": "monster/odog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP計量表加速【完美迴避】",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/odog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "行雲流水",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/odog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "看破",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "裂傷耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/odog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "行雲流水",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "裂傷耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/odog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "看破",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "SP計量表加速【完美迴避】",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/odog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP計量表加速【完美迴避】",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/e-odog.png": {
+    "chineseName": "兇爪龍",
+    "iconPath": "monster/e-odog.png",
+    "items": [
+      {
+        "icon": "monster/e-odog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "超會心",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/e-odog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "堅忍不拔",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "死裡逃生",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/e-odog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "力量解放",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "會心擊【屬性】",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/e-odog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "堅忍不拔",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/e-odog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "超會心",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "SP計量表加速【完美迴避】",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/e-odog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "龍屬性攻擊強化",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/devi.png": {
+    "chineseName": "恐暴龍",
+    "iconPath": "monster/devi.png",
+    "items": [
+      {
+        "icon": "monster/devi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "視武器而不同",
+            "unlock_grade": 8,
+            "level": null
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/devi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "KO術",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "龍屬性攻擊強化",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/devi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "力量解放",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/devi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "無傷",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "龍屬性攻擊強化",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/devi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "龍屬性攻擊強化",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "耐震",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/devi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "毅力",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "力量解放",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/basa.png": {
+    "chineseName": "岩龍",
+    "iconPath": "monster/basa.png",
+    "items": [
+      {
+        "icon": "monster/basa.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "火場怪力",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/basa.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "睡眠耐性",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/basa.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "砲術",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/basa.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "後座力減輕",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/basa.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "火屬性攻擊強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/basa.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "砲術",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "防禦性能",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/khez.png": {
+    "chineseName": "奇怪龍",
+    "iconPath": "monster/khez.png",
+    "items": [
+      {
+        "icon": "monster/khez.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "無傷",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/khez.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "麻痺屬性強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "SP計量表保險",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/khez.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "雷屬性攻擊強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/khez.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP計量表保險",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "不屈",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/khez.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "麻痺耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/khez.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "集中",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "KO術",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/kush.png": {
+    "chineseName": "鋼龍",
+    "iconPath": "monster/kush.png",
+    "items": [
+      {
+        "icon": "monster/kush.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "獵人集結",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "風壓耐性",
+            "unlock_grade": 8,
+            "level": 2
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/kush.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鋼龍的凍風",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "裝填速度",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "耳塞",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/kush.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鋼龍的凍風",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "破壞王",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "體力增強",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/kush.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鋼龍的凍風",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "集中",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/kush.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鋼龍的凍風",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "弱點特效",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "風壓耐性",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/kush.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鋼龍的凍風",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "輕巧",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "完美迴避強化",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/mizu.png": {
+    "chineseName": "泡狐龍",
+    "iconPath": "monster/mizu.png",
+    "items": [
+      {
+        "icon": "monster/mizu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "完美迴避強化",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/mizu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "水屬性攻擊強化",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/mizu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "泡沫之舞",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/mizu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "泡沫之舞",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "死裡逃生",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/mizu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP計量表加速【完美迴避】",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/mizu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "死裡逃生",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/teos.png": {
+    "chineseName": "炎王龍",
+    "iconPath": "monster/teos.png",
+    "items": [
+      {
+        "icon": "monster/teos.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "獵人集結",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "火場怪力",
+            "unlock_grade": 8,
+            "level": 2
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/teos.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "炎王龍的爆塵",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "力量解放",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "毅力",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/teos.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "炎王龍的爆塵",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "看破",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "完美迴避強化",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/teos.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "炎王龍的爆塵",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "砲術",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "防禦性能",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/teos.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "炎王龍的爆塵",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "強化持續",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "連擊",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/teos.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "炎王龍的爆塵",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "超會心",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/akno.png": {
+    "chineseName": "傘鳥",
+    "iconPath": "monster/akno.png",
+    "items": [
+      {
+        "icon": "monster/akno.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鎖定",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/akno.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "裝填防禦",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/akno.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "裝填防禦",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "防禦性能",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/akno.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "行雲流水",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "強化持續",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/akno.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "看破",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "無傷",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/akno.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "火屬性攻擊強化",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/magn.png": {
+    "chineseName": "怨虎龍",
+    "iconPath": "monster/magn.png",
+    "items": [
+      {
+        "icon": "monster/magn.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "破壞王",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/magn.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鬼火纏身",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/magn.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "裝填速度",
+            "unlock_grade": 4,
+            "level": 2
+          },
+          {
+            "name": "爆破異常耐性",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/magn.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "爆破屬性強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/magn.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "爆破異常耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "鬼火纏身",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G6",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/magn.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "爆破屬性強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "奇襲",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G6"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/raja.png": {
+    "chineseName": "金獅子",
+    "iconPath": "monster/raja.png",
+    "items": [
+      {
+        "icon": "monster/raja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "視武器而不同",
+            "unlock_grade": 8,
+            "level": null
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/raja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "雷耐性",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/raja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鬥氣活性",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "SP計量表加速",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G7"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/raja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鬥氣活性",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/raja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "集中",
+            "unlock_grade": 5,
+            "level": 1
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/raja.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "怨恨",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "耐震",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/nerg.png": {
+    "chineseName": "滅盡龍",
+    "iconPath": "monster/nerg.png",
+    "items": [
+      {
+        "icon": "monster/nerg.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "獵人集結",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "破壞王",
+            "unlock_grade": 8,
+            "level": 2
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/nerg.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "滅盡龍的渴望",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "看破",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "完美迴避強化",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/nerg.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "滅盡龍的渴望",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "奇襲",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/nerg.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "滅盡龍的渴望",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "攻擊守勢",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "防禦性能",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/nerg.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "滅盡龍的渴望",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "攻撃",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "破壞王",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/nerg.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "滅盡龍的渴望",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "裝填速度",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "後座力減輕",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/lago.png": {
+    "chineseName": "白兔獸",
+    "iconPath": "monster/lago.png",
+    "items": [
+      {
+        "icon": "monster/lago.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鎖定",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/lago.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP技能威力提升",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/lago.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "攻撃",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/lago.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "團體狩獵強化【防禦】",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "怨恨",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/lago.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "團體狩獵強化【防禦】",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/lago.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "冰屬性攻擊強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/volv.png": {
+    "chineseName": "赤甲獸",
+    "iconPath": "monster/volv.png",
+    "items": [
+      {
+        "icon": "monster/volv.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/volv.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "變形強化",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "強化持續",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/volv.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "麻痺屬性強化",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/volv.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "變形強化",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/volv.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP計量表保險",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "鬥氣活性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/volv.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "麻痺耐性",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/somn.png": {
+    "chineseName": "人魚龍",
+    "iconPath": "monster/somn.png",
+    "items": [
+      {
+        "icon": "monster/somn.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/somn.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "迴避裝填",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "迴避距離UP",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/somn.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "輕巧",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/somn.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "迴避裝填",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/somn.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "睡眠攻擊強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "覺醒一擊",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/somn.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "奇襲【狀態異常】",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/tigr.png": {
+    "chineseName": "轟龍",
+    "iconPath": "monster/tigr.png",
+    "items": [
+      {
+        "icon": "monster/tigr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "凶會心",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/tigr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "凶會心",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "SP計量表加速",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/tigr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "火場怪力",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "毅力",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/tigr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "耳塞",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/tigr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "凶會心",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/tigr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鎖定",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "破壞王",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/b-tigr.png": {
+    "chineseName": "黑轟龍",
+    "iconPath": "monster/b-tigr.png",
+    "items": [
+      {
+        "icon": "monster/b-tigr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "視武器而不同",
+            "unlock_grade": 5,
+            "level": null
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/b-tigr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "攻擊．境界",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "果敢",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/b-tigr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "攻擊．境界",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "鎖定",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "攻撃",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/b-tigr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "攻擊．境界",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "裝填速度",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "後座力減輕",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/b-tigr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "攻擊．境界",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "攻撃",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/b-tigr.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "攻擊．境界",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "完美巧擊【持續】",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/kiri.png": {
+    "chineseName": "麒麟",
+    "iconPath": "monster/kiri.png",
+    "items": [
+      {
+        "icon": "monster/kiri.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "獵人集結",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "力量解放",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/kiri.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "幻獸疾雷",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "鎖定",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "鬥氣活性",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/kiri.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "幻獸疾雷",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "超會心",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "看破",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/kiri.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "幻獸疾雷",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "超會心",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "弱點特效",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/kiri.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "幻獸疾雷",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "超會心",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "力量解放",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/kiri.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "幻獸疾雷",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "後座力減輕",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/baze.png": {
+    "chineseName": "爆鱗龍",
+    "iconPath": "monster/baze.png",
+    "items": [
+      {
+        "icon": "monster/baze.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "視武器而不同",
+            "unlock_grade": 8,
+            "level": null
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/baze.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "裝填速度",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "砲術",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/baze.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "勇猛",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/baze.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "凶會心",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/baze.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "砲術",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/baze.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "勇猛",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "爆破屬性強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/chat.png": {
+    "chineseName": "纏蛙",
+    "iconPath": "monster/chat.png",
+    "items": [
+      {
+        "icon": "monster/chat.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦準備",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/chat.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦準備",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "奇襲",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/chat.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦準備",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "軀幹強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/chat.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦準備",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/chat.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦準備",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "怨恨",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/chat.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦準備",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "迴避裝填",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/arzu.png": {
+    "chineseName": "青熊獸",
+    "iconPath": "monster/arzu.png",
+    "items": [
+      {
+        "icon": "monster/arzu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP技能威力提升",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/arzu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "團體狩獵強化【攻擊】",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "團體狩獵強化【防禦】",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/arzu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "團體狩獵強化【攻擊】",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/arzu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "集中",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "SP計量表加速",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/arzu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "變形強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/arzu.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "凶會心",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "SP技能威力提升",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/glav.png": {
+    "chineseName": "斬龍",
+    "iconPath": "monster/glav.png",
+    "items": [
+      {
+        "icon": "monster/glav.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "凶會心",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/glav.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "蠻力",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/glav.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鎖定",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "蠻力",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/glav.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "弱點特效",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/glav.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "行雲流水",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "奇襲",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/glav.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "連擊",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "完美迴避強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/cham.png": {
+    "chineseName": "霞龍",
+    "iconPath": "monster/cham.png",
+    "items": [
+      {
+        "icon": "monster/cham.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "獵人集結",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "奇襲【狀態異常】",
+            "unlock_grade": 8,
+            "level": 2
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/cham.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "霞龍的毒霧",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "追擊【毒】",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "奇襲【狀態異常】",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G6"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/cham.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "霞龍的毒霧",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "集中",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G6"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/cham.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "霞龍的毒霧",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "勇猛",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G6"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/cham.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "霞龍的毒霧",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "追擊【毒】",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G6"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/cham.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "霞龍的毒霧",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "攻擊守勢",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "防禦性能",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G6"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/g-wrog.png": {
+    "chineseName": "毒狗龍王",
+    "iconPath": "monster/g-wrog.png",
+    "items": [
+      {
+        "icon": "monster/g-wrog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鎖定",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/g-wrog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "強化持續",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/g-wrog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "最後一擊",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "後座力減輕",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/g-wrog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "看破",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/g-wrog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦性能",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/g-wrog.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "最後一擊",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/bish.png": {
+    "chineseName": "天狗獸",
+    "iconPath": "monster/bish.png",
+    "items": [
+      {
+        "icon": "monster/bish.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "團體狩獵強化【攻擊】",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/bish.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "追擊【麻痺】",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/bish.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "裝填速度",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "連擊",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/bish.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "KO術",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "輕巧",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/bish.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "追擊【麻痺】",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "團體狩獵強化【攻擊】",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/bish.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "行雲流水",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "集中",
+            "unlock_grade": 6,
+            "level": 2
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/beot.png": {
+    "chineseName": "冰魚龍",
+    "iconPath": "monster/beot.png",
+    "items": [
+      {
+        "icon": "monster/beot.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "勇猛",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/beot.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "無傷",
+            "unlock_grade": 4,
+            "level": 2
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/beot.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "蓄攻、響音強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "KO術",
+            "unlock_grade": 6,
+            "level": 2
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/beot.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鎖定",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "集中",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/beot.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "裝填防禦",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "冰屬性攻擊強化",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/beot.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "蓄攻、響音強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/narg.png": {
+    "chineseName": "迅龍",
+    "iconPath": "monster/narg.png",
+    "items": [
+      {
+        "icon": "monster/narg.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "死裡逃生",
+            "unlock_grade": 5,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/narg.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鬥氣活性",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "集中",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/narg.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "超會心",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "鎖定",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/narg.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "累積狀態異常時威力UP",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/narg.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "迴避裝填",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "無傷",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/narg.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "累積狀態異常時威力UP",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "完美迴避強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/nami.png": {
+    "chineseName": "冥波龍",
+    "iconPath": "monster/nami.png",
+    "items": [
+      {
+        "icon": "monster/nami.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "獵人集結",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "弱點特效",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/nami.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "溟波龍的雷浪",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "裝填速度",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "後座力減輕",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/nami.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "溟波龍的雷浪",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "力量解放",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "超會心",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/nami.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "溟波龍的雷浪",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "看破",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "弱點特效",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/nami.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "溟波龍的雷浪",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "水屬性攻擊強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/nami.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "溟波龍的雷浪",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "完美巧擊",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/luna.png": {
+    "chineseName": "冰狼龍",
+    "iconPath": "monster/luna.png",
+    "items": [
+      {
+        "icon": "monster/luna.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "高能強化【冰】",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/luna.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "後座力減輕",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "彈道強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/luna.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "高能強化【冰】",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/luna.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "蓄攻、響音強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/luna.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "體力增強",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/luna.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "彈道強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "連擊",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/gara.png": {
+    "chineseName": "剛纏獸",
+    "iconPath": "monster/gara.png",
+    "items": [
+      {
+        "icon": "monster/gara.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "果敢",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/gara.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "凶會心",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/gara.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "防禦性能",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/gara.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "果敢",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/gara.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "果敢",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "裝填速度",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/gara.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "果敢",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "鎖定",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/espi.png": {
+    "chineseName": "棘龍",
+    "iconPath": "monster/espi.png",
+    "items": [
+      {
+        "icon": "monster/espi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "破壞王【SP技能】",
+            "unlock_grade": 5,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/espi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "高能強化【火】",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "體力增強",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/espi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "追擊",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/espi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "破壞王【SP技能】",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "鎖定",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/espi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "追擊",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "破壞王",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/espi.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "高能強化【火】",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/malz.png": {
+    "chineseName": "爵銀龍",
+    "iconPath": "monster/malz.png",
+    "items": [
+      {
+        "icon": "monster/malz.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "獵人集結",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "高能強化【龍】",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/malz.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "爵銀龍的紅血",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "高能強化【龍】",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/malz.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "爵銀龍的紅血",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "劫血纏身",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/malz.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "爵銀龍的紅血",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "劫血纏身",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "死裡逃生",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/malz.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "爵銀龍的紅血",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "鬥氣活性",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/malz.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "爵銀龍的紅血",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "追擊",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/quem.png": {
+    "chineseName": "炎尾龍",
+    "iconPath": "monster/quem.png",
+    "items": [
+      {
+        "icon": "monster/quem.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "勇猛",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/quem.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "砲術",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "鎖定",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/quem.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "通常彈．屬性通常彈強化",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "彈藥節約",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/quem.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "彈藥節約",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "後座力減輕",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/quem.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "勇往直前",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "SP計量表加速",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/quem.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "攻撃",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/goss.png": {
+    "chineseName": "雪鬼獸",
+    "iconPath": "monster/goss.png",
+    "items": [
+      {
+        "icon": "monster/goss.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "凶會心",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/goss.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "變形攻擊強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "變形強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/goss.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "冰屬性攻擊強化．境界",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "冰屬性攻擊強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/goss.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "冰屬性攻擊強化．境界",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "精靈加護",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5",
+              "G8"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/goss.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "冰屬性攻擊強化．境界",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "變形攻擊強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/goss.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "變形強化",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "鎖定",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/asta.png": {
+    "chineseName": "電龍",
+    "iconPath": "monster/asta.png",
+    "items": [
+      {
+        "icon": "monster/asta.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "雷屬性攻擊強化",
+            "unlock_grade": 8,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/asta.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "雷屬性攻擊強化．境界",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "裝填速度",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "雷屬性攻擊強化",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/asta.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "雷屬性攻擊強化．境界",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "絕對迴避【SP】",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/asta.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "雷屬性攻擊強化．境界",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "絕對迴避【SP】",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "完美巧擊【持續】",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/asta.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "雷屬性攻擊強化．境界",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "會心擊【屬性】",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "name": "看破",
+            "unlock_grade": 8,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/asta.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "雷屬性攻擊強化．境界",
+            "unlock_grade": 5,
+            "level": 1
+          },
+          {
+            "name": "雷屬性攻擊強化",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/lunar-24.png": {
+    "chineseName": "2024春節",
+    "iconPath": "monster/lunar-24.png",
+    "items": [
+      {
+        "icon": "monster/lunar-24.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "精靈加護",
+            "unlock_grade": 5,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/lunar-24.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "超會心",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      }
+    ]
+  },
+  "monster/mr-beast.png": {
+    "chineseName": "MrBeast聯動",
+    "iconPath": "monster/mr-beast.png",
+    "items": [
+      {
+        "icon": "monster/mr-beast.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "MrBeast挑戰！",
+            "unlock_grade": 3,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      }
+    ]
+  },
+  "monster/halloween-24.png": {
+    "chineseName": "2024萬聖節",
+    "iconPath": "monster/halloween-24.png",
+    "items": [
+      {
+        "icon": "monster/halloween-24.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "強化持續",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/halloween-24.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "完美迴避強化",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      }
+    ]
+  },
+  "monster/carnival-24.png": {
+    "chineseName": "2024嘉年華",
+    "iconPath": "monster/carnival-24.png",
+    "items": [
+      {
+        "icon": "monster/carnival-24.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/carnival-24.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "毒耐性",
+            "unlock_grade": 4,
+            "level": 2
+          },
+          {
+            "slots": [
+              "G4"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/carnival-24.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鎖定",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "看破",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G4"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/carnival-24.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "後座力減輕",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "防禦",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G4"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/carnival-24.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "SP技能威力提升",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G4"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/carnival-24.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "耐震",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "name": "愈戰愈勇",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G4"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/lunar-25.png": {
+    "chineseName": "2025春節",
+    "iconPath": "monster/lunar-25.png",
+    "items": [
+      {
+        "icon": "monster/lunar-25.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "KO術",
+            "unlock_grade": 5,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      }
+    ]
+  },
+  "monster/hope.png": {
+    "chineseName": "希望系列",
+    "iconPath": "monster/hope.png",
+    "items": [
+      {
+        "icon": "monster/hope.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鎖定",
+            "unlock_grade": 4,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      }
+    ]
+  },
+  "monster/easter-25.png": {
+    "chineseName": "2025復活節",
+    "iconPath": "monster/easter-25.png",
+    "items": [
+      {
+        "icon": "monster/easter-25.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "視武器而不同",
+            "unlock_grade": 3,
+            "level": null
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/easter-25.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "完美迴避強化",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      }
+    ]
+  },
+  "monster/summer-25.png": {
+    "chineseName": "2025夏季",
+    "iconPath": "monster/summer-25.png",
+    "items": [
+      {
+        "icon": "monster/summer-25.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "急速勁泳【2025】",
+            "unlock_grade": 3,
+            "level": 1
+          }
+        ],
+        "type": "part/weapon.png"
+      },
+      {
+        "icon": "monster/summer-25.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "熱情盛夏【2025】",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "勇猛",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/summer-25.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "熱情盛夏【2025】",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "團體狩獵強化【攻擊】",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/summer-25.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "熱情盛夏【2025】",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "團體狩獵強化【防禦】",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/halloween-25.png": {
+    "chineseName": "2025萬聖節",
+    "iconPath": "monster/halloween-25.png",
+    "items": [
+      {
+        "icon": "monster/halloween-25.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "團體狩獵強化【攻擊】",
+            "unlock_grade": 3,
+            "level": 3
+          }
+        ],
+        "type": "part/weapon.png"
+      }
+    ]
+  },
+  "monster/winter-25.png": {
+    "chineseName": "2025冬季",
+    "iconPath": "monster/winter-25.png",
+    "items": [
+      {
+        "icon": "monster/winter-25.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "視武器而不同",
+            "unlock_grade": 3,
+            "level": null
+          }
+        ],
+        "type": "part/weapon.png"
+      }
+    ]
+  },
+  "monster/alloy.png": {
+    "chineseName": "合金系列",
+    "iconPath": "monster/alloy.png",
+    "items": [
+      {
+        "icon": "monster/alloy.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "耳塞",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/alloy.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "耐震",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/alloy.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "體力增強",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/alloy.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/alloy.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "鎖定",
+            "unlock_grade": 3,
+            "level": 1
+          },
+          {
+            "name": "風壓耐性",
+            "unlock_grade": 6,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/leather.png": {
+    "chineseName": "皮製系列",
+    "iconPath": "monster/leather.png",
+    "items": [
+      {
+        "icon": "monster/leather.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "看破",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "冰耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      },
+      {
+        "icon": "monster/leather.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "攻撃",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "火耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/mail.png"
+      },
+      {
+        "icon": "monster/leather.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "防禦",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "雷耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/gloves.png"
+      },
+      {
+        "icon": "monster/leather.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "體力增強",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "水耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/belt.png"
+      },
+      {
+        "icon": "monster/leather.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "毒耐性",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "name": "麻痺耐性",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/greaves.png"
+      }
+    ]
+  },
+  "monster/halloween.png": {
+    "chineseName": "萬聖節",
+    "iconPath": "monster/halloween.png",
+    "items": [
+      {
+        "icon": "monster/halloween.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "團結力【秋季採南瓜】",
+            "unlock_grade": 2,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G5"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      }
+    ]
+  },
+  "monster/ny-24.png": {
+    "chineseName": "2024新年",
+    "iconPath": "monster/ny-24.png",
+    "items": [
+      {
+        "icon": "monster/ny-24.png",
+        "height": "79px",
+        "skills": [
+          {
+            "name": "新年快樂【2024】",
+            "unlock_grade": 4,
+            "level": 1
+          },
+          {
+            "slots": [
+              "G4"
+            ],
+            "type": "driftstone"
+          }
+        ],
+        "type": "part/helm.png"
+      }
+    ]
+  }
+}
