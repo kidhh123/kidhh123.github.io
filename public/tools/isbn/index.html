@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="用手機鏡頭掃描書本條碼，累積 ISBN 清單並匯出 CSV" />
+    <meta name="theme-color" content="#0d1117" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="ISBN 掃描" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.svg" />
+    <title>ISBN 掃描器</title>
+    <style>
+      :root {
+        --bg: #0d1117;
+        --surface: #161b22;
+        --surface-2: #1c232c;
+        --border: #30363d;
+        --text: #e6edf3;
+        --muted: #8b949e;
+        --accent: #3fb950;
+        --accent-ink: #04260f;
+        --warn: #d29922;
+        --danger: #f85149;
+        --radius: 12px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        min-height: 100dvh;
+        background: var(--bg);
+        color: var(--text);
+        font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans TC', sans-serif;
+        line-height: 1.5;
+        -webkit-tap-highlight-color: transparent;
+      }
+      main {
+        max-width: 560px;
+        margin: 0 auto;
+        padding: calc(12px + env(safe-area-inset-top)) 16px calc(96px + env(safe-area-inset-bottom));
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 8px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.35rem;
+      }
+      header a {
+        color: var(--muted);
+        font-size: 0.85rem;
+        text-decoration: none;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 12px;
+      }
+      button,
+      input {
+        font: inherit;
+        color: inherit;
+      }
+      button {
+        min-height: 44px;
+        padding: 0 14px;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        background: var(--surface-2);
+        cursor: pointer;
+        touch-action: manipulation;
+      }
+      button:active {
+        transform: scale(0.98);
+      }
+      button:disabled {
+        opacity: 0.45;
+        cursor: default;
+      }
+      button.primary {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: var(--accent-ink);
+        font-weight: 600;
+      }
+      button.danger {
+        color: var(--danger);
+      }
+      [hidden] {
+        display: none !important;
+      }
+
+      /* ===== 掃描區 ===== */
+      .viewer {
+        position: relative;
+        aspect-ratio: 4 / 3;
+        background: #000;
+        border-radius: 10px;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+      }
+      #reader {
+        position: absolute;
+        inset: 0;
+      }
+      #reader video {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+      }
+      .viewer .placeholder {
+        position: relative;
+        color: var(--muted);
+        text-align: center;
+        padding: 16px;
+        font-size: 0.95rem;
+      }
+      .viewer .placeholder .big {
+        font-size: 2.2rem;
+        display: block;
+      }
+      .flash {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0;
+        z-index: 5;
+      }
+      .flash.ok {
+        animation: flash 0.35s ease-out;
+        background: var(--accent);
+      }
+      .flash.dup {
+        animation: flash 0.35s ease-out;
+        background: var(--warn);
+      }
+      @keyframes flash {
+        from {
+          opacity: 0.55;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+      .scan-controls {
+        display: flex;
+        gap: 8px;
+        margin-top: 10px;
+      }
+      .scan-controls #btn-scan {
+        flex: 1;
+      }
+      .status {
+        margin: 8px 2px 0;
+        min-height: 1.5em;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+      .status.error {
+        color: var(--danger);
+      }
+      .last {
+        font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+        color: var(--text);
+      }
+
+      /* ===== DEBUG ===== */
+      .debug {
+        border-style: dashed;
+        border-color: var(--warn);
+      }
+      .debug h2 {
+        margin: 0 0 8px;
+        font-size: 0.8rem;
+        color: var(--warn);
+        letter-spacing: 0.05em;
+      }
+      .debug .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .debug button {
+        flex: 1 1 auto;
+        font-size: 0.9rem;
+      }
+
+      /* ===== 手動輸入 ===== */
+      .manual form {
+        display: flex;
+        gap: 8px;
+      }
+      .manual input {
+        flex: 1;
+        min-width: 0;
+        min-height: 44px;
+        padding: 0 12px;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        background: var(--bg);
+        font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+        font-size: 1rem; /* 16px 以上，iOS 才不會自動放大 */
+      }
+      .manual input:focus {
+        outline: 2px solid var(--accent);
+        outline-offset: -1px;
+      }
+      .manual label {
+        display: block;
+        font-size: 0.85rem;
+        color: var(--muted);
+        margin-bottom: 6px;
+      }
+      .manual .error {
+        margin: 6px 2px 0;
+        font-size: 0.85rem;
+        color: var(--danger);
+        min-height: 1.3em;
+      }
+
+      /* ===== 清單 ===== */
+      .list-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        margin-bottom: 6px;
+      }
+      .list-head h2 {
+        margin: 0;
+        font-size: 1rem;
+      }
+      .count {
+        color: var(--accent);
+      }
+      .list-head .tools {
+        display: flex;
+        gap: 6px;
+      }
+      .list-head .tools button {
+        min-height: 36px;
+        font-size: 0.85rem;
+        padding: 0 10px;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 2px;
+        border-top: 1px solid var(--border);
+      }
+      li:first-child {
+        border-top: none;
+      }
+      li.hit {
+        animation: hit 1s ease-out;
+      }
+      @keyframes hit {
+        from {
+          background: rgba(210, 153, 34, 0.35);
+        }
+        to {
+          background: transparent;
+        }
+      }
+      li .info {
+        flex: 1;
+        min-width: 0;
+      }
+      li .isbn {
+        font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+        font-size: 1.05rem;
+        letter-spacing: 0.02em;
+      }
+      li .meta {
+        font-size: 0.78rem;
+        color: var(--muted);
+      }
+      li .tag {
+        display: inline-block;
+        padding: 0 6px;
+        margin-right: 6px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        font-size: 0.72rem;
+      }
+      li .tag.manual {
+        color: var(--warn);
+        border-color: rgba(210, 153, 34, 0.5);
+      }
+      li .del {
+        min-height: 40px;
+        min-width: 40px;
+        padding: 0;
+        background: transparent;
+        border-color: transparent;
+        color: var(--muted);
+        font-size: 1.1rem;
+      }
+      .empty {
+        color: var(--muted);
+        text-align: center;
+        padding: 18px 0 8px;
+        font-size: 0.9rem;
+      }
+
+      /* ===== 底部固定操作列（單手操作） ===== */
+      .bottom-bar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        background: rgba(13, 17, 23, 0.92);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-top: 1px solid var(--border);
+        padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+      }
+      .bottom-bar .inner {
+        max-width: 560px;
+        margin: 0 auto;
+        display: flex;
+        gap: 8px;
+      }
+      .bottom-bar button {
+        flex: 1;
+        min-height: 48px;
+      }
+
+      /* ===== Toast ===== */
+      .toast {
+        position: fixed;
+        left: 50%;
+        bottom: calc(84px + env(safe-area-inset-bottom));
+        transform: translate(-50%, 20px);
+        z-index: 30;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        max-width: calc(100% - 32px);
+        padding: 10px 14px;
+        border-radius: 10px;
+        background: var(--text);
+        color: var(--bg);
+        font-size: 0.92rem;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        pointer-events: none;
+        transition:
+          opacity 0.18s,
+          transform 0.18s;
+      }
+      .toast.show {
+        opacity: 1;
+        transform: translate(-50%, 0);
+        pointer-events: auto;
+      }
+      .toast button {
+        min-height: 32px;
+        padding: 0 10px;
+        background: transparent;
+        border-color: var(--bg);
+        color: var(--bg);
+        font-weight: 600;
+      }
+    </style>
+    <!-- 條碼辨識：html5-qrcode（iOS Safari 沒有原生 BarcodeDetector） -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/html5-qrcode@2.3.8/html5-qrcode.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>ISBN 掃描器</h1>
+        <a href="/">← 回首頁</a>
+      </header>
+
+      <section class="card">
+        <div class="viewer">
+          <div class="placeholder" id="placeholder">
+            <span class="big">📚</span>
+            按下「開始掃描」，對準書背的條碼
+          </div>
+          <div id="reader"></div>
+          <div class="flash" id="flash"></div>
+        </div>
+        <div class="scan-controls">
+          <button type="button" class="primary" id="btn-scan">開始掃描</button>
+          <button type="button" id="btn-torch" hidden aria-pressed="false">🔦 手電筒</button>
+        </div>
+        <p class="status" id="status" aria-live="polite"></p>
+      </section>
+
+      <section class="card debug" id="debug" hidden>
+        <h2>DEBUG（只在 localhost 或網址加 ?debug=1 時出現）</h2>
+        <div class="row">
+          <button type="button" id="dbg-random">✅ 模擬掃描成功（隨機 ISBN）</button>
+          <button type="button" id="dbg-repeat">🔁 再掃上一本</button>
+          <button type="button" id="dbg-nonbook">🥫 非書籍條碼</button>
+        </div>
+      </section>
+
+      <section class="card manual">
+        <form id="manual-form" novalidate>
+          <input
+            id="manual-input"
+            type="text"
+            inputmode="text"
+            autocomplete="off"
+            autocapitalize="characters"
+            spellcheck="false"
+            placeholder="手動輸入 ISBN-10 或 ISBN-13"
+            aria-label="手動輸入 ISBN"
+          />
+          <button type="submit">加入</button>
+        </form>
+        <p class="error" id="manual-error" aria-live="polite"></p>
+      </section>
+
+      <section class="card">
+        <div class="list-head">
+          <h2>清單 <span class="count" id="count">0</span> 筆</h2>
+          <div class="tools">
+            <button type="button" id="btn-copy">複製全部</button>
+            <button type="button" class="danger" id="btn-clear">清空</button>
+          </div>
+        </div>
+        <ul id="list"></ul>
+        <p class="empty" id="empty">還沒有資料，掃一本書試試看</p>
+      </section>
+    </main>
+
+    <div class="bottom-bar">
+      <div class="inner">
+        <button type="button" class="primary" id="btn-export">匯出 CSV</button>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status">
+      <span id="toast-text"></span>
+      <button type="button" id="toast-action" hidden></button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "ISBN 掃描器",
+  "short_name": "ISBN 掃描",
+  "description": "用手機鏡頭掃描書本條碼，累積 ISBN 清單並匯出 CSV",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "lang": "zh-Hant",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
