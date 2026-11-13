@@ -2,7 +2,7 @@
 // 策略：自己的檔案網路優先（改版立刻生效、離線用快取）；固定版本的 CDN 檔快取優先。
 // 預先快取清單有變動時，把 VERSION 加一。
 
-const VERSION = 'v2';
+const VERSION = 'v3';
 const CACHE = `isbn-scanner-${VERSION}`;
 const LIB = 'https://cdn.jsdelivr.net/npm/@zxing/library@0.21.3/umd/index.min.js';
 const PRECACHE = ['./', './app.js', './isbn.js', './scanner.js', './manifest.webmanifest', './icon.svg', LIB];
