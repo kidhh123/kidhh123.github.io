@@ -10,6 +10,7 @@ import {
   saveList,
   toCsv,
 } from './isbn.js';
+import { Scanner } from './scanner.js';
 
 const COOLDOWN_MS = 2000; // F5：同一條碼 2 秒內不重複觸發
 
@@ -234,95 +235,62 @@ function setStatus(text, isError = false, html = false) {
 
 // ===== 鏡頭 =====
 
-let scanner = null;
+const dbgInfo = $('dbg-info');
+const scanner = new Scanner($('video'), $('scan-box'), onDetected, (info) => {
+  if (!dbgInfo) return;
+  dbgInfo.textContent = `${info.decoder}｜影像 ${info.video}｜框內 ${info.crop}｜${info.ms}ms/幀｜第 ${info.frames} 幀`;
+});
 let scanning = false;
 let busy = false;
 let torchOn = false;
-let torchFeature = null;
 
-function getLib() {
-  // html5-qrcode 的 UMD 版會把類別掛在全域
-  const lib = window.__Html5QrcodeLibrary__ ?? window;
-  return lib.Html5Qrcode ? lib : null;
+function showCamera(on) {
+  $('video').hidden = !on;
+  $('scan-box').hidden = !on;
+  el.placeholder.hidden = on;
 }
 
 async function startScan() {
-  if (!window.isSecureContext) {
+  if (!window.isSecureContext || !navigator.mediaDevices?.getUserMedia) {
     setStatus('鏡頭需要 HTTPS 才能使用。仍可用下方手動輸入。', true);
     return;
   }
-  const lib = getLib();
-  if (!lib) {
-    setStatus('條碼辨識元件載入失敗（第一次開啟需要網路）。仍可用手動輸入。', true);
-    return;
+  setStatus('啟動鏡頭中…');
+  showCamera(true);
+  try {
+    await scanner.start();
+  } catch (err) {
+    showCamera(false);
+    throw err;
   }
 
-  scanner ??= new lib.Html5Qrcode('reader', {
-    formatsToSupport: [lib.Html5QrcodeSupportedFormats.EAN_13], // F3：不收 EAN-5 附加碼
-    verbose: false,
-    experimentalFeatures: { useBarCodeDetectorIfSupported: true },
-  });
-
-  setStatus('啟動鏡頭中…');
-  await scanner.start(
-    { facingMode: 'environment' },
-    {
-      fps: 12,
-      // 書背條碼是橫長形，掃描框做成寬扁
-      qrbox: (w, h) => ({
-        width: Math.max(120, Math.floor(w * 0.86)),
-        height: Math.max(60, Math.floor(Math.min(h * 0.5, w * 0.42))),
-      }),
-    },
-    (text) => onDetected(text),
-    () => {}, // 每一幀沒掃到都會呼叫，忽略
-  );
-
   scanning = true;
-  el.placeholder.hidden = true;
   el.scan.textContent = '停止掃描';
   el.scan.classList.remove('primary');
-  setStatus('掃描中：對準書背條碼，掃完直接換下一本');
-  setupTorch();
+  setStatus('把條碼放進框內、紅線橫過條碼，距離約 10–20 公分');
+  torchOn = false;
+  el.torch.hidden = !scanner.torchSupported;
+  el.torch.textContent = '🔦 手電筒';
+  el.torch.setAttribute('aria-pressed', 'false');
 }
 
 async function stopScan() {
-  if (!scanner || !scanning) return;
-  try {
-    if (torchOn) await setTorch(false);
-    await scanner.stop();
-    scanner.clear();
-  } catch {
-    /* 已經停了 */
-  }
+  if (!scanning) return;
+  scanner.stop();
   scanning = false;
-  torchFeature = null;
+  torchOn = false;
   el.torch.hidden = true;
-  el.placeholder.hidden = false;
+  showCamera(false);
   el.scan.textContent = '開始掃描';
   el.scan.classList.add('primary');
   setStatus('');
-}
-
-function setupTorch() {
-  torchFeature = null;
-  el.torch.hidden = true;
-  try {
-    const feature = scanner.getRunningTrackCameraCapabilities().torchFeature();
-    if (feature.isSupported()) {
-      torchFeature = feature;
-      el.torch.hidden = false;
-      el.torch.setAttribute('aria-pressed', 'false');
-    }
-  } catch {
-    /* 裝置或瀏覽器不支援（iOS Safari 通常不支援） */
-  }
+  if (dbgInfo) dbgInfo.textContent = '鏡頭未啟動';
 }
 
 async function setTorch(on) {
-  if (!torchFeature) return;
+  if (!scanner.torchSupported) return;
   try {
-    await torchFeature.apply(on);
+    await scanner.setTorch(on);
     torchOn = on;
     el.torch.setAttribute('aria-pressed', String(on));
     el.torch.textContent = on ? '🔦 關燈' : '🔦 手電筒';
@@ -356,7 +324,6 @@ el.scan.addEventListener('click', async () => {
     else await startScan();
   } catch (err) {
     scanning = false;
-    el.placeholder.hidden = false;
     setStatus(describeCameraError(err), true);
   } finally {
     busy = false;

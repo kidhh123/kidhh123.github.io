@@ -114,14 +114,35 @@
         display: grid;
         place-items: center;
       }
-      #reader {
+      /* 影片填滿容器並置中裁切；scanner.js 用同樣的換算把框對回原始像素 */
+      #video {
         position: absolute;
         inset: 0;
-      }
-      #reader video {
-        width: 100% !important;
-        height: 100% !important;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
+      }
+      /* 掃描框：框外變暗，框內就是實際辨識的範圍 */
+      .scan-box {
+        position: absolute;
+        left: 7%;
+        width: 86%;
+        top: 20%;
+        height: 60%;
+        border-radius: 8px;
+        box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.45);
+        border: 2px solid rgba(255, 255, 255, 0.85);
+        z-index: 2;
+      }
+      .scan-box::after {
+        content: '';
+        position: absolute;
+        left: 6%;
+        right: 6%;
+        top: 50%;
+        height: 2px;
+        background: rgba(248, 81, 73, 0.85);
+        box-shadow: 0 0 6px rgba(248, 81, 73, 0.9);
       }
       .viewer .placeholder {
         position: relative;
@@ -129,6 +150,13 @@
         text-align: center;
         padding: 16px;
         font-size: 0.95rem;
+      }
+      .dbg-info {
+        margin: 8px 0 0;
+        font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+        font-size: 0.75rem;
+        color: var(--muted);
+        word-break: break-all;
       }
       .viewer .placeholder .big {
         font-size: 2.2rem;
@@ -385,12 +413,7 @@
         font-weight: 600;
       }
     </style>
-    <!-- 條碼辨識：html5-qrcode（iOS Safari 沒有原生 BarcodeDetector） -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/html5-qrcode@2.3.8/html5-qrcode.min.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
+    <!-- 條碼辨識在 scanner.js：有原生 BarcodeDetector 就用，沒有（iOS）再按需載入 ZXing -->
     <script type="module" src="app.js"></script>
   </head>
   <body>
@@ -406,7 +429,8 @@
             <span class="big">📚</span>
             按下「開始掃描」，對準書背的條碼
           </div>
-          <div id="reader"></div>
+          <video id="video" playsinline muted hidden></video>
+          <div class="scan-box" id="scan-box" hidden></div>
           <div class="flash" id="flash"></div>
         </div>
         <div class="scan-controls">
@@ -423,6 +447,7 @@
           <button type="button" id="dbg-repeat">🔁 再掃上一本</button>
           <button type="button" id="dbg-nonbook">🥫 非書籍條碼</button>
         </div>
+        <p class="dbg-info" id="dbg-info">鏡頭未啟動</p>
       </section>
 
       <section class="card manual">
