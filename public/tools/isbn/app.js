@@ -238,11 +238,94 @@ function setStatus(text, isError = false, html = false) {
 const dbgInfo = $('dbg-info');
 const scanner = new Scanner($('video'), $('scan-box'), onDetected, (info) => {
   if (!dbgInfo) return;
-  dbgInfo.textContent = `${info.decoder}｜影像 ${info.video}｜框內 ${info.crop}｜${info.ms}ms/幀｜第 ${info.frames} 幀`;
+  const zoom = info.zoom ? `｜變焦 ${info.zoom}×` : '';
+  dbgInfo.textContent =
+    `${info.decoder}｜鏡頭「${info.camera}」｜對焦 ${info.focus}${zoom}` +
+    `｜影像 ${info.video}｜框內 ${info.crop}｜${info.ms}ms/幀｜第 ${info.frames} 幀`;
 });
 let scanning = false;
 let busy = false;
 let torchOn = false;
+let cameras = [];
+
+// 記住使用者選的鏡頭與變焦倍率
+const CAM_KEY = 'isbn-scanner:camera';
+function loadCamPref() {
+  try {
+    return JSON.parse(localStorage.getItem(CAM_KEY) ?? '{}') ?? {};
+  } catch {
+    return {};
+  }
+}
+function saveCamPref(patch) {
+  try {
+    localStorage.setItem(CAM_KEY, JSON.stringify({ ...loadCamPref(), ...patch }));
+  } catch {
+    /* 忽略 */
+  }
+}
+
+const zoomRow = $('zoom-row');
+const zoomInput = $('zoom');
+const zoomVal = $('zoom-val');
+const camBtn = $('btn-cam');
+
+async function setupCameraControls() {
+  try {
+    cameras = await scanner.backCameras();
+  } catch {
+    cameras = [];
+  }
+  camBtn.hidden = cameras.length < 2;
+
+  const range = scanner.zoomRange;
+  zoomRow.hidden = !range;
+  if (range) {
+    zoomInput.min = String(range.min);
+    zoomInput.max = String(range.max);
+    zoomInput.step = String(range.step || 0.1);
+    const saved = Number(loadCamPref().zoom);
+    const value = saved >= range.min && saved <= range.max ? saved : range.min;
+    zoomInput.value = String(value);
+    zoomVal.textContent = `${value.toFixed(1)}×`;
+    if (value !== range.min) scanner.setZoom(value).catch(() => {});
+  }
+}
+
+zoomInput.addEventListener('input', () => {
+  const value = Number(zoomInput.value);
+  zoomVal.textContent = `${value.toFixed(1)}×`;
+  scanner.setZoom(value).catch(() => {});
+  saveCamPref({ zoom: value });
+});
+
+camBtn.addEventListener('click', async () => {
+  if (!scanning || busy || cameras.length < 2) return;
+  busy = true;
+  try {
+    const i = cameras.findIndex((d) => d.deviceId === scanner.deviceId);
+    const next = cameras[(i + 1) % cameras.length];
+    scanner.stop();
+    await scanner.start(next.deviceId);
+    saveCamPref({ deviceId: next.deviceId });
+    torchOn = false;
+    el.torch.hidden = !scanner.torchSupported;
+    await setupCameraControls();
+    toast(`鏡頭 ${cameras.indexOf(next) + 1}/${cameras.length}：${next.label || '未命名'}`);
+  } catch (err) {
+    setStatus(describeCameraError(err), true);
+  } finally {
+    busy = false;
+  }
+});
+
+// 點畫面對焦
+$('video').parentElement.addEventListener('click', async (e) => {
+  if (!scanning) return;
+  const r = e.currentTarget.getBoundingClientRect();
+  const ok = await scanner.focusAt((e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height);
+  toast(ok ? '對焦中…' : '這個鏡頭不支援手動對焦，試試「切換鏡頭」');
+});
 
 function showCamera(on) {
   $('video').hidden = !on;
@@ -258,7 +341,7 @@ async function startScan() {
   setStatus('啟動鏡頭中…');
   showCamera(true);
   try {
-    await scanner.start();
+    await scanner.start(loadCamPref().deviceId);
   } catch (err) {
     showCamera(false);
     throw err;
@@ -267,11 +350,12 @@ async function startScan() {
   scanning = true;
   el.scan.textContent = '停止掃描';
   el.scan.classList.remove('primary');
-  setStatus('把條碼放進框內、紅線橫過條碼，距離約 10–20 公分');
+  setStatus('條碼放進框內、紅線橫過條碼。對不到焦：拿遠一點再放大，或點畫面對焦');
   torchOn = false;
   el.torch.hidden = !scanner.torchSupported;
   el.torch.textContent = '🔦 手電筒';
   el.torch.setAttribute('aria-pressed', 'false');
+  await setupCameraControls();
 }
 
 async function stopScan() {
@@ -280,6 +364,8 @@ async function stopScan() {
   scanning = false;
   torchOn = false;
   el.torch.hidden = true;
+  camBtn.hidden = true;
+  zoomRow.hidden = true;
   showCamera(false);
   el.scan.textContent = '開始掃描';
   el.scan.classList.add('primary');

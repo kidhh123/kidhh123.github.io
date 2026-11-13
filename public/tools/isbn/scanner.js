@@ -94,25 +94,70 @@ export class Scanner {
     }
   }
 
-  async start() {
-    // 先開鏡頭再載辨識器：權限對話框越早跳越好
+  get caps() {
+    try {
+      return this.track?.getCapabilities?.() ?? {};
+    } catch {
+      return {};
+    }
+  }
+
+  get label() {
+    return this.track?.label ?? '';
+  }
+
+  get deviceId() {
+    return this.track?.getSettings?.().deviceId ?? '';
+  }
+
+  /** 後鏡頭清單（要先拿到權限，label 才會有內容）。 */
+  async backCameras() {
+    const all = (await navigator.mediaDevices.enumerateDevices()).filter((d) => d.kind === 'videoinput');
+    const back = all.filter((d) => /back|rear|environment|後/i.test(d.label));
+    return back.length ? back : all;
+  }
+
+  async openStream(deviceId) {
+    const video = deviceId
+      ? { deviceId: { exact: deviceId } }
+      : { facingMode: { ideal: 'environment' } };
     this.stream = await navigator.mediaDevices.getUserMedia({
       audio: false,
-      video: {
-        facingMode: { ideal: 'environment' },
-        width: { ideal: 1920 },
-        height: { ideal: 1080 },
-      },
+      video: { ...video, width: { ideal: 1920 }, height: { ideal: 1080 } },
     });
     this.track = this.stream.getVideoTracks()[0];
+  }
+
+  closeStream() {
+    for (const t of this.stream?.getTracks() ?? []) t.stop();
+    this.stream = null;
+    this.track = null;
+  }
+
+  /**
+   * @param {string} [deviceId] 指定鏡頭；沒指定時用預設後鏡頭，
+   *   但 Android 多鏡頭手機常預設到不能近拍對焦的超廣角，所以有主鏡頭（camera2 0）就改用它。
+   */
+  async start(deviceId) {
+    // 先開鏡頭再載辨識器：權限對話框越早跳越好
     try {
-      const caps = this.track.getCapabilities?.() ?? {};
-      if (caps.focusMode?.includes('continuous')) {
-        await this.track.applyConstraints({ advanced: [{ focusMode: 'continuous' }] });
-      }
-    } catch {
-      /* 不支援就算了 */
+      await this.openStream(deviceId);
+    } catch (err) {
+      if (!deviceId) throw err;
+      await this.openStream(); // 記住的鏡頭不見了：退回預設
     }
+    if (!deviceId) {
+      try {
+        const main = (await this.backCameras()).find((d) => /camera2 0\b/.test(d.label));
+        if (main && main.deviceId !== this.deviceId) {
+          this.closeStream();
+          await this.openStream(main.deviceId);
+        }
+      } catch {
+        /* 換不了就用原本的 */
+      }
+    }
+    await this.applyFocus('continuous');
 
     const v = this.video;
     v.setAttribute('playsinline', '');
@@ -135,10 +180,48 @@ export class Scanner {
   stop() {
     this.running = false;
     clearTimeout(this.timer);
-    for (const t of this.stream?.getTracks() ?? []) t.stop();
-    this.stream = null;
-    this.track = null;
+    this.closeStream();
     this.video.srcObject = null;
+  }
+
+  async applyFocus(mode) {
+    try {
+      if (this.caps.focusMode?.includes(mode)) {
+        await this.track.applyConstraints({ advanced: [{ focusMode: mode }] });
+        return true;
+      }
+    } catch {
+      /* 不支援 */
+    }
+    return false;
+  }
+
+  /** 點畫面對焦：x、y 為 0–1 的相對位置。先單次對焦再切回連續對焦。 */
+  async focusAt(x, y) {
+    try {
+      const c = this.caps;
+      if (!c.focusMode?.length) return false;
+      // 不支援 pointsOfInterest 的瀏覽器會直接忽略這個欄位
+      const adv = { pointsOfInterest: [{ x, y }] };
+      if (c.focusMode.includes('single-shot')) adv.focusMode = 'single-shot';
+      else if (c.focusMode.includes('continuous')) adv.focusMode = 'continuous';
+      await this.track.applyConstraints({ advanced: [adv] });
+      if (adv.focusMode === 'single-shot') {
+        setTimeout(() => this.applyFocus('continuous'), 1500);
+      }
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  get zoomRange() {
+    const z = this.caps.zoom;
+    return z && z.max > z.min ? z : null;
+  }
+
+  async setZoom(value) {
+    await this.track?.applyConstraints({ advanced: [{ zoom: value }] });
   }
 
   async setTorch(on) {
@@ -183,6 +266,9 @@ export class Scanner {
       this.frames++;
       this.onInfo?.({
         decoder: this.decoder.name,
+        camera: this.label,
+        focus: (this.caps.focusMode ?? []).join('/') || '無',
+        zoom: this.track?.getSettings?.().zoom,
         video: `${vw}×${vh}`,
         crop: `${cw}×${ch}`,
         ms: Math.round(performance.now() - t0),

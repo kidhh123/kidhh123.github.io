@@ -108,18 +108,23 @@ export function saveList(list) {
 
 // ===== 匯出 =====
 
-const CSV_COLUMNS = ['isbn', 'scanned_at', 'source'];
-
 function csvCell(value) {
   const s = String(value ?? '');
   return /[",\r\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
 }
 
-/** 產生 CSV 文字（UTF-8 BOM + CRLF，Excel 開中文不亂碼）。匯出順序：舊 → 新。 */
+/** ISO 8601 → 「2026-11-13 18:30:00」（本地時間，Excel / Google Sheets 會自動認成日期時間）。 */
+export function csvTime(iso) {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return iso ?? '';
+  return isoLocal(d).slice(0, 19).replace('T', ' ');
+}
+
+/** 產生 CSV 文字：兩欄 ISBN、時間（UTF-8 BOM + CRLF，Excel 開中文不亂碼）。匯出順序：舊 → 新。 */
 export function toCsv(list) {
-  const rows = [CSV_COLUMNS.join(',')];
+  const rows = ['ISBN,時間'];
   for (const item of [...list].reverse()) {
-    rows.push(CSV_COLUMNS.map((c) => csvCell(item[c])).join(','));
+    rows.push([csvCell(item.isbn), csvCell(csvTime(item.scanned_at))].join(','));
   }
   return `﻿${rows.join('\r\n')}\r\n`;
 }

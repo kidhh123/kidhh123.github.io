@@ -192,11 +192,38 @@
       }
       .scan-controls {
         display: flex;
+        flex-wrap: wrap;
         gap: 8px;
         margin-top: 10px;
       }
+      .scan-controls button {
+        flex: 1 1 0;
+      }
       .scan-controls #btn-scan {
+        flex-basis: 100%;
+      }
+      .zoom-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+      .zoom-row input {
         flex: 1;
+        min-width: 0;
+        accent-color: var(--accent);
+        height: 32px;
+      }
+      .zoom-val {
+        min-width: 3.2em;
+        text-align: right;
+        font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+        color: var(--text);
+      }
+      .viewer {
+        cursor: crosshair;
       }
       .status {
         margin: 8px 2px 0;
@@ -424,7 +451,7 @@
   <body>
     <main>
       <header>
-        <h1>ISBN 掃描器 <small class="ver">v3</small></h1>
+        <h1>ISBN 掃描器 <small class="ver">v4</small></h1>
         <a href="/">← 回首頁</a>
       </header>
 
@@ -440,8 +467,14 @@
         </div>
         <div class="scan-controls">
           <button type="button" class="primary" id="btn-scan">開始掃描</button>
+          <button type="button" id="btn-cam" hidden>🔄 切換鏡頭</button>
           <button type="button" id="btn-torch" hidden aria-pressed="false">🔦 手電筒</button>
         </div>
+        <label class="zoom-row" id="zoom-row" hidden>
+          <span>🔍 變焦</span>
+          <input type="range" id="zoom" min="1" max="1" step="0.1" value="1" />
+          <span class="zoom-val" id="zoom-val">1.0×</span>
+        </label>
         <p class="status" id="status" aria-live="polite"></p>
       </section>
 
